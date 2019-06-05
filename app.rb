@@ -7,7 +7,7 @@ class App < Sinatra::Base
     set :session_secret, "secret"
   end
 
-  GET '/' do
+  get '/' do
     @sessions = sessions
   end
 
